@@ -1,0 +1,16 @@
+.git
+.gitignore
+.gitmodules
+.vscode
+.idea
+vendor/
+node_modules/
+public/bundles/
+assets/vendor/
+var/
+.env.local
+.env.dev
+/.env.*.local
+/.env.local.php
+/.phpunit.cache
+/phpunit.xml
