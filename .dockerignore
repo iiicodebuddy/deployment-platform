@@ -3,11 +3,14 @@
 .gitmodules
 .vscode
 .idea
-vendor/
-node_modules/
-public/bundles/
-assets/vendor/
-var/
+
+# Anchor project dependencies and local dumps to the root context
+/vendor/
+/node_modules/
+/public/bundles/
+/assets/vendor/
+/var/
+
 .env.local
 .env.dev
 /.env.*.local
