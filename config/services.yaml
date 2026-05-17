@@ -8,6 +8,8 @@
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
     router.default_uri: 'http://localhost'
+    env(DATABASE_URL): '%env(default:default_db_url:MYSQL_URL)%'
+    default_db_url: 'mysql://root@127.0.0.1:3306/app_db?serverVersion=8.0'
 
 services:
     # default configuration for services in *this* file
