@@ -14,8 +14,8 @@ services:
       - ./var:/app/var
     environment:
       DATABASE_URL: "mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@db:3306/${MYSQL_DATABASE}?serverVersion=8.0.32&charset=utf8mb4"
-      APP_ENV: dev
-      APP_DEBUG: "1"
+      APP_ENV: prod
+      APP_DEBUG: "false"
     depends_on:
       db:
         condition: service_healthy
